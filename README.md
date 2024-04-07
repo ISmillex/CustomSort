@@ -313,7 +313,7 @@ To run the sorting algorithm benchmarks on your local machine, follow these step
 
 1. Clone the repository:
    ```
-   git clone https://github.com/ISmilllex/CustomSort.git
+   git clone https://github.com/ISmillex/CustomSort.git
    ```
 
 2. Navigate to the project directory:
