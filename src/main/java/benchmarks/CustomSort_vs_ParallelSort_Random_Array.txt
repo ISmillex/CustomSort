@@ -1,0 +1,1154 @@
+Starting ArraySorter Benchmark...
+
+Benchmark Parameters:
+java ArraySorterBenchmark -warmup 5 -timed 10 -iterations 50 -lengths 100000,1000000,10000000 -types Random Wide,Random Narrow -algorithms custom.sorts.CustomSort::sort,java.util.Arrays::parallelSort
+
+
+iteration 1/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     2.2951                              1.7364                              Winner: java.util.Arrays::parallelSort, faster by 24.34%
+Random Narrow       100000     2.0131                              2.1515                              Winner: custom.sorts.CustomSort::sort, faster by 6.43%
+Random Wide         1000000    17.9244                             17.5142                             Winner: java.util.Arrays::parallelSort, faster by 2.29%
+Random Narrow       1000000    17.9113                             18.3591                             Winner: custom.sorts.CustomSort::sort, faster by 2.44%
+Random Wide         10000000   188.0497                            199.8505                            Winner: custom.sorts.CustomSort::sort, faster by 5.90%
+Random Narrow       10000000   178.5508                            190.8881                            Winner: custom.sorts.CustomSort::sort, faster by 6.46%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      5.31                     4/300 wins     
+java.util.Arrays::parallelSort     13.31                    2/300 wins     
+
+Overall Winner: java.util.Arrays::parallelSort      8.00% better than custom.sorts.CustomSort::sort      
+
+
+
+iteration 2/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.6385                              1.7736                              Winner: custom.sorts.CustomSort::sort, faster by 7.62%
+Random Narrow       100000     1.6814                              1.6871                              Winner: custom.sorts.CustomSort::sort, faster by 0.34%
+Random Wide         1000000    16.8847                             18.2080                             Winner: custom.sorts.CustomSort::sort, faster by 7.27%
+Random Narrow       1000000    16.7723                             18.2207                             Winner: custom.sorts.CustomSort::sort, faster by 7.95%
+Random Wide         10000000   189.8628                            175.6759                            Winner: java.util.Arrays::parallelSort, faster by 7.47%
+Random Narrow       10000000   193.9159                            204.7785                            Winner: custom.sorts.CustomSort::sort, faster by 5.30%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      5.52                     9/300 wins     
+java.util.Arrays::parallelSort     11.37                    3/300 wins     
+
+Overall Winner: java.util.Arrays::parallelSort      5.84% better than custom.sorts.CustomSort::sort      
+
+
+
+iteration 3/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.7083                              1.7377                              Winner: custom.sorts.CustomSort::sort, faster by 1.69%
+Random Narrow       100000     1.7178                              1.8268                              Winner: custom.sorts.CustomSort::sort, faster by 5.97%
+Random Wide         1000000    17.5786                             18.0755                             Winner: custom.sorts.CustomSort::sort, faster by 2.75%
+Random Narrow       1000000    16.4102                             17.4600                             Winner: custom.sorts.CustomSort::sort, faster by 6.01%
+Random Wide         10000000   191.5532                            185.2184                            Winner: java.util.Arrays::parallelSort, faster by 3.31%
+Random Narrow       10000000   193.6640                            191.7807                            Winner: java.util.Arrays::parallelSort, faster by 0.97%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      5.09                     13/300 wins    
+java.util.Arrays::parallelSort     7.68                     5/300 wins     
+
+Overall Winner: java.util.Arrays::parallelSort      2.59% better than custom.sorts.CustomSort::sort      
+
+
+
+iteration 4/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.6885                              1.7510                              Winner: custom.sorts.CustomSort::sort, faster by 3.57%
+Random Narrow       100000     1.7233                              1.7455                              Winner: custom.sorts.CustomSort::sort, faster by 1.27%
+Random Wide         1000000    17.2877                             18.4744                             Winner: custom.sorts.CustomSort::sort, faster by 6.42%
+Random Narrow       1000000    16.3812                             17.1879                             Winner: custom.sorts.CustomSort::sort, faster by 4.69%
+Random Wide         10000000   185.9988                            185.7554                            Winner: java.util.Arrays::parallelSort, faster by 0.13%
+Random Narrow       10000000   191.7570                            186.5808                            Winner: java.util.Arrays::parallelSort, faster by 2.70%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      4.83                     17/300 wins    
+java.util.Arrays::parallelSort     5.89                     7/300 wins     
+
+Overall Winner: java.util.Arrays::parallelSort      1.06% better than custom.sorts.CustomSort::sort      
+
+
+
+iteration 5/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.8180                              1.7735                              Winner: java.util.Arrays::parallelSort, faster by 2.45%
+Random Narrow       100000     1.7022                              1.8399                              Winner: custom.sorts.CustomSort::sort, faster by 7.48%
+Random Wide         1000000    17.3212                             16.6791                             Winner: java.util.Arrays::parallelSort, faster by 3.71%
+Random Narrow       1000000    15.9620                             17.5058                             Winner: custom.sorts.CustomSort::sort, faster by 8.82%
+Random Wide         10000000   179.9392                            197.0343                            Winner: custom.sorts.CustomSort::sort, faster by 8.68%
+Random Narrow       10000000   171.4955                            212.1117                            Winner: custom.sorts.CustomSort::sort, faster by 19.15%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      6.01                     21/300 wins    
+java.util.Arrays::parallelSort     5.26                     9/300 wins     
+
+Overall Winner: custom.sorts.CustomSort::sort       0.75% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 6/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     2.0568                              2.0505                              Winner: java.util.Arrays::parallelSort, faster by 0.31%
+Random Narrow       100000     1.6562                              1.7311                              Winner: custom.sorts.CustomSort::sort, faster by 4.33%
+Random Wide         1000000    17.5119                             18.3740                             Winner: custom.sorts.CustomSort::sort, faster by 4.69%
+Random Narrow       1000000    17.0562                             19.4036                             Winner: custom.sorts.CustomSort::sort, faster by 12.10%
+Random Wide         10000000   191.2269                            207.4906                            Winner: custom.sorts.CustomSort::sort, faster by 7.84%
+Random Narrow       10000000   198.0156                            212.8462                            Winner: custom.sorts.CustomSort::sort, faster by 6.97%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      6.24                     26/300 wins    
+java.util.Arrays::parallelSort     4.77                     10/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       1.47% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 7/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.8117                              1.8853                              Winner: custom.sorts.CustomSort::sort, faster by 3.91%
+Random Narrow       100000     1.7198                              1.8829                              Winner: custom.sorts.CustomSort::sort, faster by 8.66%
+Random Wide         1000000    20.1069                             19.0546                             Winner: java.util.Arrays::parallelSort, faster by 5.23%
+Random Narrow       1000000    18.1302                             17.6099                             Winner: java.util.Arrays::parallelSort, faster by 2.87%
+Random Wide         10000000   187.7171                            205.2598                            Winner: custom.sorts.CustomSort::sort, faster by 8.55%
+Random Narrow       10000000   204.6892                            218.2944                            Winner: custom.sorts.CustomSort::sort, faster by 6.23%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      6.32                     30/300 wins    
+java.util.Arrays::parallelSort     4.65                     12/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       1.67% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 8/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.9808                              2.0841                              Winner: custom.sorts.CustomSort::sort, faster by 4.96%
+Random Narrow       100000     1.7990                              2.0722                              Winner: custom.sorts.CustomSort::sort, faster by 13.18%
+Random Wide         1000000    17.9575                             19.8963                             Winner: custom.sorts.CustomSort::sort, faster by 9.74%
+Random Narrow       1000000    16.6519                             19.2510                             Winner: custom.sorts.CustomSort::sort, faster by 13.50%
+Random Wide         10000000   190.3764                            214.9769                            Winner: custom.sorts.CustomSort::sort, faster by 11.44%
+Random Narrow       10000000   192.3481                            205.9851                            Winner: custom.sorts.CustomSort::sort, faster by 6.62%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      6.91                     36/300 wins    
+java.util.Arrays::parallelSort     4.65                     12/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.27% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 9/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.8215                              1.9861                              Winner: custom.sorts.CustomSort::sort, faster by 8.28%
+Random Narrow       100000     1.8467                              1.9065                              Winner: custom.sorts.CustomSort::sort, faster by 3.14%
+Random Wide         1000000    18.4991                             18.7701                             Winner: custom.sorts.CustomSort::sort, faster by 1.44%
+Random Narrow       1000000    19.2686                             18.9542                             Winner: java.util.Arrays::parallelSort, faster by 1.63%
+Random Wide         10000000   208.2341                            201.4859                            Winner: java.util.Arrays::parallelSort, faster by 3.24%
+Random Narrow       10000000   201.7771                            214.3125                            Winner: custom.sorts.CustomSort::sort, faster by 5.85%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      6.69                     40/300 wins    
+java.util.Arrays::parallelSort     4.33                     14/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.36% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 10/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.9285                              1.9943                              Winner: custom.sorts.CustomSort::sort, faster by 3.30%
+Random Narrow       100000     1.7562                              1.8325                              Winner: custom.sorts.CustomSort::sort, faster by 4.17%
+Random Wide         1000000    18.3440                             18.6035                             Winner: custom.sorts.CustomSort::sort, faster by 1.39%
+Random Narrow       1000000    18.8391                             19.6293                             Winner: custom.sorts.CustomSort::sort, faster by 4.03%
+Random Wide         10000000   205.1640                            212.9339                            Winner: custom.sorts.CustomSort::sort, faster by 3.65%
+Random Narrow       10000000   190.4197                            224.2358                            Winner: custom.sorts.CustomSort::sort, faster by 15.08%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      6.51                     46/300 wins    
+java.util.Arrays::parallelSort     4.33                     14/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.17% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 11/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.9728                              1.8569                              Winner: java.util.Arrays::parallelSort, faster by 5.87%
+Random Narrow       100000     1.7284                              1.8819                              Winner: custom.sorts.CustomSort::sort, faster by 8.16%
+Random Wide         1000000    18.3161                             18.5883                             Winner: custom.sorts.CustomSort::sort, faster by 1.46%
+Random Narrow       1000000    17.2298                             21.3603                             Winner: custom.sorts.CustomSort::sort, faster by 19.34%
+Random Wide         10000000   203.8662                            200.9897                            Winner: java.util.Arrays::parallelSort, faster by 1.41%
+Random Narrow       10000000   208.5048                            222.5432                            Winner: custom.sorts.CustomSort::sort, faster by 6.31%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      6.69                     50/300 wins    
+java.util.Arrays::parallelSort     4.25                     16/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.44% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 12/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.8951                              1.9230                              Winner: custom.sorts.CustomSort::sort, faster by 1.45%
+Random Narrow       100000     1.8109                              2.0597                              Winner: custom.sorts.CustomSort::sort, faster by 12.08%
+Random Wide         1000000    17.2218                             19.6073                             Winner: custom.sorts.CustomSort::sort, faster by 12.17%
+Random Narrow       1000000    17.5479                             19.9709                             Winner: custom.sorts.CustomSort::sort, faster by 12.13%
+Random Wide         10000000   201.8964                            212.4609                            Winner: custom.sorts.CustomSort::sort, faster by 4.97%
+Random Narrow       10000000   205.8715                            202.5522                            Winner: java.util.Arrays::parallelSort, faster by 1.61%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      6.86                     55/300 wins    
+java.util.Arrays::parallelSort     4.09                     17/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.77% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 13/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.9431                              1.8956                              Winner: java.util.Arrays::parallelSort, faster by 2.44%
+Random Narrow       100000     1.7730                              1.9289                              Winner: custom.sorts.CustomSort::sort, faster by 8.08%
+Random Wide         1000000    17.3751                             20.4666                             Winner: custom.sorts.CustomSort::sort, faster by 15.10%
+Random Narrow       1000000    17.5995                             21.1502                             Winner: custom.sorts.CustomSort::sort, faster by 16.79%
+Random Wide         10000000   213.4334                            211.1927                            Winner: java.util.Arrays::parallelSort, faster by 1.05%
+Random Narrow       10000000   211.9944                            203.1212                            Winner: java.util.Arrays::parallelSort, faster by 4.19%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      7.20                     58/300 wins    
+java.util.Arrays::parallelSort     3.86                     20/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       3.33% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 14/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.8845                              1.8979                              Winner: custom.sorts.CustomSort::sort, faster by 0.71%
+Random Narrow       100000     1.9710                              1.8809                              Winner: java.util.Arrays::parallelSort, faster by 4.58%
+Random Wide         1000000    18.7181                             20.3092                             Winner: custom.sorts.CustomSort::sort, faster by 7.83%
+Random Narrow       1000000    17.0199                             21.8293                             Winner: custom.sorts.CustomSort::sort, faster by 22.03%
+Random Wide         10000000   196.3862                            207.5530                            Winner: custom.sorts.CustomSort::sort, faster by 5.38%
+Random Narrow       10000000   208.2412                            211.0827                            Winner: custom.sorts.CustomSort::sort, faster by 1.35%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      7.22                     63/300 wins    
+java.util.Arrays::parallelSort     3.90                     21/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       3.32% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 15/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     2.0296                              1.8889                              Winner: java.util.Arrays::parallelSort, faster by 6.93%
+Random Narrow       100000     1.7557                              1.8126                              Winner: custom.sorts.CustomSort::sort, faster by 3.14%
+Random Wide         1000000    17.3788                             19.6554                             Winner: custom.sorts.CustomSort::sort, faster by 11.58%
+Random Narrow       1000000    19.9442                             21.3412                             Winner: custom.sorts.CustomSort::sort, faster by 6.55%
+Random Wide         10000000   194.2610                            226.0257                            Winner: custom.sorts.CustomSort::sort, faster by 14.05%
+Random Narrow       10000000   194.1596                            204.6077                            Winner: custom.sorts.CustomSort::sort, faster by 5.11%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      7.28                     68/300 wins    
+java.util.Arrays::parallelSort     4.03                     22/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       3.25% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 16/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.8924                              2.0782                              Winner: custom.sorts.CustomSort::sort, faster by 8.94%
+Random Narrow       100000     1.8040                              2.0002                              Winner: custom.sorts.CustomSort::sort, faster by 9.81%
+Random Wide         1000000    17.2440                             20.6032                             Winner: custom.sorts.CustomSort::sort, faster by 16.30%
+Random Narrow       1000000    18.9453                             18.9825                             Winner: custom.sorts.CustomSort::sort, faster by 0.20%
+Random Wide         10000000   200.2537                            202.4082                            Winner: custom.sorts.CustomSort::sort, faster by 1.06%
+Random Narrow       10000000   216.1878                            196.9857                            Winner: java.util.Arrays::parallelSort, faster by 8.88%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      7.28                     73/300 wins    
+java.util.Arrays::parallelSort     4.24                     23/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       3.03% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 17/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     2.0278                              2.0980                              Winner: custom.sorts.CustomSort::sort, faster by 3.35%
+Random Narrow       100000     1.9369                              1.9456                              Winner: custom.sorts.CustomSort::sort, faster by 0.45%
+Random Wide         1000000    18.6216                             17.9659                             Winner: java.util.Arrays::parallelSort, faster by 3.52%
+Random Narrow       1000000    17.4321                             18.0355                             Winner: custom.sorts.CustomSort::sort, faster by 3.35%
+Random Wide         10000000   201.2618                            230.7136                            Winner: custom.sorts.CustomSort::sort, faster by 12.77%
+Random Narrow       10000000   222.1168                            226.4408                            Winner: custom.sorts.CustomSort::sort, faster by 1.91%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      7.09                     78/300 wins    
+java.util.Arrays::parallelSort     4.21                     24/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.88% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 18/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.9307                              2.0476                              Winner: custom.sorts.CustomSort::sort, faster by 5.71%
+Random Narrow       100000     1.8799                              2.1198                              Winner: custom.sorts.CustomSort::sort, faster by 11.32%
+Random Wide         1000000    19.2899                             20.1128                             Winner: custom.sorts.CustomSort::sort, faster by 4.09%
+Random Narrow       1000000    19.6515                             20.0826                             Winner: custom.sorts.CustomSort::sort, faster by 2.15%
+Random Wide         10000000   211.8350                            240.8183                            Winner: custom.sorts.CustomSort::sort, faster by 12.04%
+Random Narrow       10000000   198.6582                            232.6815                            Winner: custom.sorts.CustomSort::sort, faster by 14.62%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      7.18                     84/300 wins    
+java.util.Arrays::parallelSort     4.21                     24/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.97% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 19/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.9089                              1.9203                              Winner: custom.sorts.CustomSort::sort, faster by 0.59%
+Random Narrow       100000     1.7927                              1.8583                              Winner: custom.sorts.CustomSort::sort, faster by 3.53%
+Random Wide         1000000    20.4515                             19.5905                             Winner: java.util.Arrays::parallelSort, faster by 4.21%
+Random Narrow       1000000    18.1085                             20.9422                             Winner: custom.sorts.CustomSort::sort, faster by 13.53%
+Random Wide         10000000   218.9776                            226.8126                            Winner: custom.sorts.CustomSort::sort, faster by 3.45%
+Random Narrow       10000000   220.2365                            216.8271                            Winner: java.util.Arrays::parallelSort, faster by 1.55%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      7.09                     88/300 wins    
+java.util.Arrays::parallelSort     4.11                     26/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.98% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 20/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.8019                              2.0130                              Winner: custom.sorts.CustomSort::sort, faster by 10.49%
+Random Narrow       100000     1.9854                              1.9172                              Winner: java.util.Arrays::parallelSort, faster by 3.44%
+Random Wide         1000000    19.3298                             21.2026                             Winner: custom.sorts.CustomSort::sort, faster by 8.83%
+Random Narrow       1000000    17.5226                             20.0604                             Winner: custom.sorts.CustomSort::sort, faster by 12.65%
+Random Wide         10000000   223.3081                            202.0615                            Winner: java.util.Arrays::parallelSort, faster by 9.51%
+Random Narrow       10000000   206.9363                            237.1556                            Winner: custom.sorts.CustomSort::sort, faster by 12.74%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      7.27                     92/300 wins    
+java.util.Arrays::parallelSort     4.28                     28/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.99% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 21/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.8401                              2.0918                              Winner: custom.sorts.CustomSort::sort, faster by 12.03%
+Random Narrow       100000     1.8963                              1.9047                              Winner: custom.sorts.CustomSort::sort, faster by 0.44%
+Random Wide         1000000    17.7915                             18.7384                             Winner: custom.sorts.CustomSort::sort, faster by 5.05%
+Random Narrow       1000000    19.7091                             21.0694                             Winner: custom.sorts.CustomSort::sort, faster by 6.46%
+Random Wide         10000000   221.2141                            215.2094                            Winner: java.util.Arrays::parallelSort, faster by 2.71%
+Random Narrow       10000000   196.8194                            209.6113                            Winner: custom.sorts.CustomSort::sort, faster by 6.10%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      7.21                     97/300 wins    
+java.util.Arrays::parallelSort     4.23                     29/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.98% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 22/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.8454                              2.0791                              Winner: custom.sorts.CustomSort::sort, faster by 11.24%
+Random Narrow       100000     1.8094                              1.9943                              Winner: custom.sorts.CustomSort::sort, faster by 9.27%
+Random Wide         1000000    19.1096                             20.0860                             Winner: custom.sorts.CustomSort::sort, faster by 4.86%
+Random Narrow       1000000    19.3654                             19.9717                             Winner: custom.sorts.CustomSort::sort, faster by 3.04%
+Random Wide         10000000   216.1069                            207.0094                            Winner: java.util.Arrays::parallelSort, faster by 4.21%
+Random Narrow       10000000   202.2792                            215.7937                            Winner: custom.sorts.CustomSort::sort, faster by 6.26%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      7.19                     102/300 wins   
+java.util.Arrays::parallelSort     4.23                     30/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.97% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 23/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.9369                              1.8534                              Winner: java.util.Arrays::parallelSort, faster by 4.31%
+Random Narrow       100000     1.7505                              1.8955                              Winner: custom.sorts.CustomSort::sort, faster by 7.65%
+Random Wide         1000000    18.8514                             19.6057                             Winner: custom.sorts.CustomSort::sort, faster by 3.85%
+Random Narrow       1000000    18.7192                             19.7174                             Winner: custom.sorts.CustomSort::sort, faster by 5.06%
+Random Wide         10000000   223.6617                            206.7835                            Winner: java.util.Arrays::parallelSort, faster by 7.55%
+Random Narrow       10000000   205.8753                            231.5039                            Winner: custom.sorts.CustomSort::sort, faster by 11.07%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      7.18                     106/300 wins   
+java.util.Arrays::parallelSort     4.33                     32/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.85% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 24/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     2.0023                              1.9080                              Winner: java.util.Arrays::parallelSort, faster by 4.71%
+Random Narrow       100000     1.8406                              1.9860                              Winner: custom.sorts.CustomSort::sort, faster by 7.32%
+Random Wide         1000000    19.4298                             20.0247                             Winner: custom.sorts.CustomSort::sort, faster by 2.97%
+Random Narrow       1000000    17.8585                             20.1512                             Winner: custom.sorts.CustomSort::sort, faster by 11.38%
+Random Wide         10000000   214.2601                            233.2602                            Winner: custom.sorts.CustomSort::sort, faster by 8.15%
+Random Narrow       10000000   201.4136                            238.5261                            Winner: custom.sorts.CustomSort::sort, faster by 15.56%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      7.27                     111/300 wins   
+java.util.Arrays::parallelSort     4.34                     33/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.92% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 25/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.8272                              1.8494                              Winner: custom.sorts.CustomSort::sort, faster by 1.20%
+Random Narrow       100000     1.9052                              1.9843                              Winner: custom.sorts.CustomSort::sort, faster by 3.99%
+Random Wide         1000000    20.7738                             19.7026                             Winner: java.util.Arrays::parallelSort, faster by 5.16%
+Random Narrow       1000000    18.3894                             19.4640                             Winner: custom.sorts.CustomSort::sort, faster by 5.52%
+Random Wide         10000000   224.4881                            209.9195                            Winner: java.util.Arrays::parallelSort, faster by 6.49%
+Random Narrow       10000000   203.8539                            212.3262                            Winner: custom.sorts.CustomSort::sort, faster by 3.99%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      7.14                     115/300 wins   
+java.util.Arrays::parallelSort     4.43                     35/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.71% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 26/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.9441                              2.1205                              Winner: custom.sorts.CustomSort::sort, faster by 8.32%
+Random Narrow       100000     1.7637                              1.9977                              Winner: custom.sorts.CustomSort::sort, faster by 11.71%
+Random Wide         1000000    18.0472                             19.0561                             Winner: custom.sorts.CustomSort::sort, faster by 5.29%
+Random Narrow       1000000    18.6198                             20.9281                             Winner: custom.sorts.CustomSort::sort, faster by 11.03%
+Random Wide         10000000   218.6792                            224.4636                            Winner: custom.sorts.CustomSort::sort, faster by 2.58%
+Random Narrow       10000000   215.6748                            211.1440                            Winner: java.util.Arrays::parallelSort, faster by 2.10%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      7.17                     120/300 wins   
+java.util.Arrays::parallelSort     4.36                     36/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.81% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 27/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.9762                              1.9834                              Winner: custom.sorts.CustomSort::sort, faster by 0.37%
+Random Narrow       100000     1.9701                              1.9788                              Winner: custom.sorts.CustomSort::sort, faster by 0.44%
+Random Wide         1000000    19.6299                             19.2573                             Winner: java.util.Arrays::parallelSort, faster by 1.90%
+Random Narrow       1000000    19.8715                             19.4707                             Winner: java.util.Arrays::parallelSort, faster by 2.02%
+Random Wide         10000000   214.0532                            217.2316                            Winner: custom.sorts.CustomSort::sort, faster by 1.46%
+Random Narrow       10000000   232.7182                            217.8903                            Winner: java.util.Arrays::parallelSort, faster by 6.37%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      7.01                     123/300 wins   
+java.util.Arrays::parallelSort     4.29                     39/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.72% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 28/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     2.1124                              2.2772                              Winner: custom.sorts.CustomSort::sort, faster by 7.24%
+Random Narrow       100000     2.0722                              2.1203                              Winner: custom.sorts.CustomSort::sort, faster by 2.27%
+Random Wide         1000000    22.2680                             21.2910                             Winner: java.util.Arrays::parallelSort, faster by 4.39%
+Random Narrow       1000000    19.0115                             19.2049                             Winner: custom.sorts.CustomSort::sort, faster by 1.01%
+Random Wide         10000000   237.7192                            233.2192                            Winner: java.util.Arrays::parallelSort, faster by 1.89%
+Random Narrow       10000000   231.2170                            222.3564                            Winner: java.util.Arrays::parallelSort, faster by 3.83%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      6.93                     126/300 wins   
+java.util.Arrays::parallelSort     4.23                     42/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.70% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 29/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.9260                              2.0184                              Winner: custom.sorts.CustomSort::sort, faster by 4.58%
+Random Narrow       100000     1.8780                              1.9696                              Winner: custom.sorts.CustomSort::sort, faster by 4.65%
+Random Wide         1000000    19.7310                             20.1390                             Winner: custom.sorts.CustomSort::sort, faster by 2.03%
+Random Narrow       1000000    19.3254                             19.5037                             Winner: custom.sorts.CustomSort::sort, faster by 0.91%
+Random Wide         10000000   219.1194                            215.2664                            Winner: java.util.Arrays::parallelSort, faster by 1.76%
+Random Narrow       10000000   219.2507                            229.8999                            Winner: custom.sorts.CustomSort::sort, faster by 4.63%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      6.79                     131/300 wins   
+java.util.Arrays::parallelSort     4.17                     43/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.62% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 30/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.9524                              1.9259                              Winner: java.util.Arrays::parallelSort, faster by 1.36%
+Random Narrow       100000     1.9695                              1.9913                              Winner: custom.sorts.CustomSort::sort, faster by 1.09%
+Random Wide         1000000    18.7142                             20.4889                             Winner: custom.sorts.CustomSort::sort, faster by 8.66%
+Random Narrow       1000000    18.8826                             18.9158                             Winner: custom.sorts.CustomSort::sort, faster by 0.18%
+Random Wide         10000000   209.9741                            210.7201                            Winner: custom.sorts.CustomSort::sort, faster by 0.35%
+Random Narrow       10000000   231.7508                            233.0664                            Winner: custom.sorts.CustomSort::sort, faster by 0.56%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      6.62                     136/300 wins   
+java.util.Arrays::parallelSort     4.10                     44/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.52% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 31/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     2.0168                              2.0669                              Winner: custom.sorts.CustomSort::sort, faster by 2.42%
+Random Narrow       100000     1.8407                              2.0900                              Winner: custom.sorts.CustomSort::sort, faster by 11.93%
+Random Wide         1000000    19.4101                             18.4671                             Winner: java.util.Arrays::parallelSort, faster by 4.86%
+Random Narrow       1000000    19.1534                             19.3534                             Winner: custom.sorts.CustomSort::sort, faster by 1.03%
+Random Wide         10000000   220.7637                            239.3827                            Winner: custom.sorts.CustomSort::sort, faster by 7.78%
+Random Narrow       10000000   221.9089                            206.7538                            Winner: java.util.Arrays::parallelSort, faster by 6.83%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      6.60                     140/300 wins   
+java.util.Arrays::parallelSort     4.18                     46/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.42% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 32/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.7244                              2.0451                              Winner: custom.sorts.CustomSort::sort, faster by 15.68%
+Random Narrow       100000     1.7792                              1.8925                              Winner: custom.sorts.CustomSort::sort, faster by 5.98%
+Random Wide         1000000    20.5264                             20.1004                             Winner: java.util.Arrays::parallelSort, faster by 2.08%
+Random Narrow       1000000    19.3209                             21.4361                             Winner: custom.sorts.CustomSort::sort, faster by 9.87%
+Random Wide         10000000   198.6720                            211.8390                            Winner: custom.sorts.CustomSort::sort, faster by 6.22%
+Random Narrow       10000000   195.1374                            223.1956                            Winner: custom.sorts.CustomSort::sort, faster by 12.57%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      6.72                     145/300 wins   
+java.util.Arrays::parallelSort     4.14                     47/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.58% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 33/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.9827                              2.0927                              Winner: custom.sorts.CustomSort::sort, faster by 5.26%
+Random Narrow       100000     1.7864                              1.8495                              Winner: custom.sorts.CustomSort::sort, faster by 3.41%
+Random Wide         1000000    18.2441                             18.2975                             Winner: custom.sorts.CustomSort::sort, faster by 0.29%
+Random Narrow       1000000    19.3153                             19.8283                             Winner: custom.sorts.CustomSort::sort, faster by 2.59%
+Random Wide         10000000   212.5669                            224.2001                            Winner: custom.sorts.CustomSort::sort, faster by 5.19%
+Random Narrow       10000000   224.3179                            209.1182                            Winner: java.util.Arrays::parallelSort, faster by 6.78%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      6.61                     150/300 wins   
+java.util.Arrays::parallelSort     4.19                     48/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.42% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 34/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.9132                              1.9572                              Winner: custom.sorts.CustomSort::sort, faster by 2.25%
+Random Narrow       100000     1.7852                              1.8560                              Winner: custom.sorts.CustomSort::sort, faster by 3.82%
+Random Wide         1000000    20.1765                             20.1287                             Winner: java.util.Arrays::parallelSort, faster by 0.24%
+Random Narrow       1000000    18.9528                             20.1039                             Winner: custom.sorts.CustomSort::sort, faster by 5.73%
+Random Wide         10000000   210.5254                            205.8141                            Winner: java.util.Arrays::parallelSort, faster by 2.24%
+Random Narrow       10000000   207.5073                            212.2383                            Winner: custom.sorts.CustomSort::sort, faster by 2.23%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      6.53                     154/300 wins   
+java.util.Arrays::parallelSort     4.07                     50/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.45% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 35/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.8263                              1.8701                              Winner: custom.sorts.CustomSort::sort, faster by 2.34%
+Random Narrow       100000     1.7647                              1.9128                              Winner: custom.sorts.CustomSort::sort, faster by 7.74%
+Random Wide         1000000    20.3977                             19.1155                             Winner: java.util.Arrays::parallelSort, faster by 6.29%
+Random Narrow       1000000    18.0673                             19.8833                             Winner: custom.sorts.CustomSort::sort, faster by 9.13%
+Random Wide         10000000   225.5552                            231.3855                            Winner: custom.sorts.CustomSort::sort, faster by 2.52%
+Random Narrow       10000000   205.2501                            223.3970                            Winner: custom.sorts.CustomSort::sort, faster by 8.12%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      6.51                     159/300 wins   
+java.util.Arrays::parallelSort     4.12                     51/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.39% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 36/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.9677                              2.0515                              Winner: custom.sorts.CustomSort::sort, faster by 4.09%
+Random Narrow       100000     1.9068                              1.8838                              Winner: java.util.Arrays::parallelSort, faster by 1.20%
+Random Wide         1000000    18.9845                             22.8659                             Winner: custom.sorts.CustomSort::sort, faster by 16.97%
+Random Narrow       1000000    19.4634                             19.9675                             Winner: custom.sorts.CustomSort::sort, faster by 2.52%
+Random Wide         10000000   207.5375                            229.1231                            Winner: custom.sorts.CustomSort::sort, faster by 9.42%
+Random Narrow       10000000   230.6360                            210.9242                            Winner: java.util.Arrays::parallelSort, faster by 8.55%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      6.55                     163/300 wins   
+java.util.Arrays::parallelSort     4.14                     53/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.41% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 37/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     2.2266                              1.9213                              Winner: java.util.Arrays::parallelSort, faster by 13.71%
+Random Narrow       100000     2.0241                              2.2616                              Winner: custom.sorts.CustomSort::sort, faster by 10.50%
+Random Wide         1000000    18.8635                             19.6497                             Winner: custom.sorts.CustomSort::sort, faster by 4.00%
+Random Narrow       1000000    17.7057                             18.9602                             Winner: custom.sorts.CustomSort::sort, faster by 6.62%
+Random Wide         10000000   214.6694                            234.9153                            Winner: custom.sorts.CustomSort::sort, faster by 8.62%
+Random Narrow       10000000   223.1759                            219.3522                            Winner: java.util.Arrays::parallelSort, faster by 1.71%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      6.57                     167/300 wins   
+java.util.Arrays::parallelSort     4.27                     55/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.30% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 38/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.9816                              3.8612                              Winner: custom.sorts.CustomSort::sort, faster by 48.68%
+Random Narrow       100000     1.8857                              1.8573                              Winner: java.util.Arrays::parallelSort, faster by 1.50%
+Random Wide         1000000    19.8542                             19.9174                             Winner: custom.sorts.CustomSort::sort, faster by 0.32%
+Random Narrow       1000000    19.1757                             20.5280                             Winner: custom.sorts.CustomSort::sort, faster by 6.59%
+Random Wide         10000000   217.1813                            206.9937                            Winner: java.util.Arrays::parallelSort, faster by 4.69%
+Random Narrow       10000000   219.3742                            207.3790                            Winner: java.util.Arrays::parallelSort, faster by 5.47%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      6.78                     170/300 wins   
+java.util.Arrays::parallelSort     4.25                     58/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.53% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 39/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.8308                              2.0323                              Winner: custom.sorts.CustomSort::sort, faster by 9.91%
+Random Narrow       100000     1.8366                              2.1376                              Winner: custom.sorts.CustomSort::sort, faster by 14.08%
+Random Wide         1000000    18.7876                             18.4535                             Winner: java.util.Arrays::parallelSort, faster by 1.78%
+Random Narrow       1000000    19.9355                             19.9799                             Winner: custom.sorts.CustomSort::sort, faster by 0.22%
+Random Wide         10000000   203.1138                            222.8850                            Winner: custom.sorts.CustomSort::sort, faster by 8.87%
+Random Narrow       10000000   201.1525                            210.9333                            Winner: custom.sorts.CustomSort::sort, faster by 4.64%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      6.81                     175/300 wins   
+java.util.Arrays::parallelSort     4.21                     59/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.59% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 40/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.9114                              1.9760                              Winner: custom.sorts.CustomSort::sort, faster by 3.27%
+Random Narrow       100000     1.8799                              1.9861                              Winner: custom.sorts.CustomSort::sort, faster by 5.35%
+Random Wide         1000000    19.0274                             20.3341                             Winner: custom.sorts.CustomSort::sort, faster by 6.43%
+Random Narrow       1000000    17.5716                             20.2702                             Winner: custom.sorts.CustomSort::sort, faster by 13.31%
+Random Wide         10000000   200.5268                            235.8329                            Winner: custom.sorts.CustomSort::sort, faster by 14.97%
+Random Narrow       10000000   211.9198                            212.1720                            Winner: custom.sorts.CustomSort::sort, faster by 0.12%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      6.82                     181/300 wins   
+java.util.Arrays::parallelSort     4.21                     59/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.61% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 41/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     2.1099                              1.8363                              Winner: java.util.Arrays::parallelSort, faster by 12.97%
+Random Narrow       100000     1.8741                              1.9363                              Winner: custom.sorts.CustomSort::sort, faster by 3.21%
+Random Wide         1000000    18.8812                             19.5277                             Winner: custom.sorts.CustomSort::sort, faster by 3.31%
+Random Narrow       1000000    19.4744                             19.6081                             Winner: custom.sorts.CustomSort::sort, faster by 0.68%
+Random Wide         10000000   205.7749                            218.6976                            Winner: custom.sorts.CustomSort::sort, faster by 5.91%
+Random Narrow       10000000   203.1569                            222.9019                            Winner: custom.sorts.CustomSort::sort, faster by 8.86%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      6.75                     186/300 wins   
+java.util.Arrays::parallelSort     4.36                     60/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.40% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 42/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.8405                              2.1895                              Winner: custom.sorts.CustomSort::sort, faster by 15.94%
+Random Narrow       100000     1.9627                              2.0527                              Winner: custom.sorts.CustomSort::sort, faster by 4.38%
+Random Wide         1000000    19.1576                             19.6145                             Winner: custom.sorts.CustomSort::sort, faster by 2.33%
+Random Narrow       1000000    19.3285                             20.3075                             Winner: custom.sorts.CustomSort::sort, faster by 4.82%
+Random Wide         10000000   224.3912                            206.4790                            Winner: java.util.Arrays::parallelSort, faster by 7.98%
+Random Narrow       10000000   216.1530                            224.3012                            Winner: custom.sorts.CustomSort::sort, faster by 3.63%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      6.74                     191/300 wins   
+java.util.Arrays::parallelSort     4.42                     61/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.32% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 43/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.8483                              1.9608                              Winner: custom.sorts.CustomSort::sort, faster by 5.74%
+Random Narrow       100000     1.8345                              1.8870                              Winner: custom.sorts.CustomSort::sort, faster by 2.79%
+Random Wide         1000000    20.1249                             20.6584                             Winner: custom.sorts.CustomSort::sort, faster by 2.58%
+Random Narrow       1000000    18.0830                             21.4122                             Winner: custom.sorts.CustomSort::sort, faster by 15.55%
+Random Wide         10000000   226.0466                            209.3003                            Winner: java.util.Arrays::parallelSort, faster by 7.41%
+Random Narrow       10000000   229.1018                            210.3822                            Winner: java.util.Arrays::parallelSort, faster by 8.17%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      6.74                     195/300 wins   
+java.util.Arrays::parallelSort     4.52                     63/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.21% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 44/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.7897                              2.0456                              Winner: custom.sorts.CustomSort::sort, faster by 12.51%
+Random Narrow       100000     1.9834                              1.9391                              Winner: java.util.Arrays::parallelSort, faster by 2.23%
+Random Wide         1000000    19.5308                             19.2361                             Winner: java.util.Arrays::parallelSort, faster by 1.51%
+Random Narrow       1000000    18.9879                             19.3734                             Winner: custom.sorts.CustomSort::sort, faster by 1.99%
+Random Wide         10000000   229.6434                            239.7197                            Winner: custom.sorts.CustomSort::sort, faster by 4.20%
+Random Narrow       10000000   218.9906                            243.4339                            Winner: custom.sorts.CustomSort::sort, faster by 10.04%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      6.75                     199/300 wins   
+java.util.Arrays::parallelSort     4.44                     65/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.30% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 45/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.9244                              1.9881                              Winner: custom.sorts.CustomSort::sort, faster by 3.20%
+Random Narrow       100000     1.8423                              1.9346                              Winner: custom.sorts.CustomSort::sort, faster by 4.77%
+Random Wide         1000000    18.8723                             18.8136                             Winner: java.util.Arrays::parallelSort, faster by 0.31%
+Random Narrow       1000000    19.7205                             21.7548                             Winner: custom.sorts.CustomSort::sort, faster by 9.35%
+Random Wide         10000000   219.7197                            242.2796                            Winner: custom.sorts.CustomSort::sort, faster by 9.31%
+Random Narrow       10000000   237.2276                            210.7985                            Winner: java.util.Arrays::parallelSort, faster by 11.14%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      6.75                     203/300 wins   
+java.util.Arrays::parallelSort     4.48                     67/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.26% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 46/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     2.0267                              1.9298                              Winner: java.util.Arrays::parallelSort, faster by 4.78%
+Random Narrow       100000     1.7800                              1.9579                              Winner: custom.sorts.CustomSort::sort, faster by 9.09%
+Random Wide         1000000    23.1744                             22.5074                             Winner: java.util.Arrays::parallelSort, faster by 2.88%
+Random Narrow       1000000    19.6232                             18.3957                             Winner: java.util.Arrays::parallelSort, faster by 6.26%
+Random Wide         10000000   225.5252                            219.2574                            Winner: java.util.Arrays::parallelSort, faster by 2.78%
+Random Narrow       10000000   197.6528                            207.0785                            Winner: custom.sorts.CustomSort::sort, faster by 4.55%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      6.75                     205/300 wins   
+java.util.Arrays::parallelSort     4.46                     71/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.28% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 47/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     2.1322                              2.3553                              Winner: custom.sorts.CustomSort::sort, faster by 9.47%
+Random Narrow       100000     1.8845                              1.9114                              Winner: custom.sorts.CustomSort::sort, faster by 1.41%
+Random Wide         1000000    19.6205                             18.9914                             Winner: java.util.Arrays::parallelSort, faster by 3.21%
+Random Narrow       1000000    17.4094                             19.3180                             Winner: custom.sorts.CustomSort::sort, faster by 9.88%
+Random Wide         10000000   214.6849                            228.3431                            Winner: custom.sorts.CustomSort::sort, faster by 5.98%
+Random Narrow       10000000   236.9009                            244.8942                            Winner: custom.sorts.CustomSort::sort, faster by 3.26%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      6.73                     210/300 wins   
+java.util.Arrays::parallelSort     4.45                     72/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.28% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 48/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     2.3681                              2.3849                              Winner: custom.sorts.CustomSort::sort, faster by 0.70%
+Random Narrow       100000     2.4007                              2.5251                              Winner: custom.sorts.CustomSort::sort, faster by 4.93%
+Random Wide         1000000    25.3833                             29.9598                             Winner: custom.sorts.CustomSort::sort, faster by 15.28%
+Random Narrow       1000000    23.2893                             23.3420                             Winner: custom.sorts.CustomSort::sort, faster by 0.23%
+Random Wide         10000000   229.1920                            234.6941                            Winner: custom.sorts.CustomSort::sort, faster by 2.34%
+Random Narrow       10000000   213.8835                            228.6359                            Winner: custom.sorts.CustomSort::sort, faster by 6.45%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      6.68                     216/300 wins   
+java.util.Arrays::parallelSort     4.45                     72/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.23% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 49/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.8592                              1.9138                              Winner: custom.sorts.CustomSort::sort, faster by 2.85%
+Random Narrow       100000     1.8828                              1.8388                              Winner: java.util.Arrays::parallelSort, faster by 2.33%
+Random Wide         1000000    19.8936                             20.3683                             Winner: custom.sorts.CustomSort::sort, faster by 2.33%
+Random Narrow       1000000    18.7851                             20.2624                             Winner: custom.sorts.CustomSort::sort, faster by 7.29%
+Random Wide         10000000   212.5605                            217.2786                            Winner: custom.sorts.CustomSort::sort, faster by 2.17%
+Random Narrow       10000000   210.6145                            217.0329                            Winner: custom.sorts.CustomSort::sort, faster by 2.96%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      6.61                     221/300 wins   
+java.util.Arrays::parallelSort     4.42                     73/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.19% better than java.util.Arrays::parallelSort     
+
+
+
+iteration 50/50
+
+ArrayType           Length    custom.sorts.CustomSort::sort      java.util.Arrays::parallelSort     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.9790                              2.0901                              Winner: custom.sorts.CustomSort::sort, faster by 5.32%
+Random Narrow       100000     1.7818                              1.8607                              Winner: custom.sorts.CustomSort::sort, faster by 4.24%
+Random Wide         1000000    17.8090                             20.9042                             Winner: custom.sorts.CustomSort::sort, faster by 14.81%
+Random Narrow       1000000    19.6908                             19.4240                             Winner: java.util.Arrays::parallelSort, faster by 1.35%
+Random Wide         10000000   215.8020                            232.2722                            Winner: custom.sorts.CustomSort::sort, faster by 7.09%
+Random Narrow       10000000   200.6642                            214.0631                            Winner: custom.sorts.CustomSort::sort, faster by 6.26%
+
+
+
+Displaying overall results...
+Sorting Algorithm                  Average % Improvement    Wins           
+---------------------------------------------------------------------------
+custom.sorts.CustomSort::sort      6.63                     226/300 wins   
+java.util.Arrays::parallelSort     4.38                     74/300 wins    
+
+Overall Winner: custom.sorts.CustomSort::sort       2.25% better than java.util.Arrays::parallelSort     
+

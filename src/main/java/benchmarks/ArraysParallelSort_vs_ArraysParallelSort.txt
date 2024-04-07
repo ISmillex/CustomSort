@@ -1,0 +1,244 @@
+Starting ArraySorter Benchmark...
+
+Benchmark Parameters:
+java ArraySorterBenchmark -warmup 5 -timed 10 -iterations 10 -lengths 10,100,1000,10000,100000,1000000,10000000 -types Random Wide -algorithms java.util.Arrays::parallelSort,java.util.Arrays::parallelSort
+
+
+iteration 1/10
+
+ArrayType           Length    java.util.Arrays::parallelSort      java.util.Arrays::parallelSort1     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         10         0.0313                               0.0269                               Winner: java.util.Arrays::parallelSort1, faster by 13.89%
+Random Wide         100        0.0472                               0.0501                               Winner: java.util.Arrays::parallelSort, faster by 5.64%
+Random Wide         1000       0.0859                               0.0872                               Winner: java.util.Arrays::parallelSort, faster by 1.57%
+Random Wide         10000      1.0263                               0.5424                               Winner: java.util.Arrays::parallelSort1, faster by 47.14%
+Random Wide         100000     1.9136                               1.8597                               Winner: java.util.Arrays::parallelSort1, faster by 2.82%
+Random Wide         1000000    16.9068                              17.2921                              Winner: java.util.Arrays::parallelSort, faster by 2.23%
+Random Wide         10000000   197.9442                             197.9235                             Winner: java.util.Arrays::parallelSort1, faster by 0.01%
+
+
+
+Displaying overall results...
+Sorting Algorithm                   Average % Improvement    Wins           
+----------------------------------------------------------------------------
+java.util.Arrays::parallelSort      3.15                     3/70 wins      
+java.util.Arrays::parallelSort1     15.97                    4/70 wins      
+
+Overall Winner: java.util.Arrays::parallelSort1      12.82% better than java.util.Arrays::parallelSort      
+
+
+
+iteration 2/10
+
+ArrayType           Length    java.util.Arrays::parallelSort      java.util.Arrays::parallelSort1     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         10         0.0124                               0.0110                               Winner: java.util.Arrays::parallelSort1, faster by 11.72%
+Random Wide         100        0.0163                               0.0136                               Winner: java.util.Arrays::parallelSort1, faster by 16.65%
+Random Wide         1000       0.0303                               0.0254                               Winner: java.util.Arrays::parallelSort1, faster by 16.43%
+Random Wide         10000      0.3020                               0.3024                               Winner: java.util.Arrays::parallelSort, faster by 0.14%
+Random Wide         100000     1.8161                               1.8058                               Winner: java.util.Arrays::parallelSort1, faster by 0.57%
+Random Wide         1000000    18.2940                              18.2678                              Winner: java.util.Arrays::parallelSort1, faster by 0.14%
+Random Wide         10000000   186.1515                             186.0324                             Winner: java.util.Arrays::parallelSort1, faster by 0.06%
+
+
+
+Displaying overall results...
+Sorting Algorithm                   Average % Improvement    Wins           
+----------------------------------------------------------------------------
+java.util.Arrays::parallelSort      2.39                     4/70 wins      
+java.util.Arrays::parallelSort1     10.94                    10/70 wins     
+
+Overall Winner: java.util.Arrays::parallelSort1      8.55% better than java.util.Arrays::parallelSort      
+
+
+
+iteration 3/10
+
+ArrayType           Length    java.util.Arrays::parallelSort      java.util.Arrays::parallelSort1     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         10         0.0063                               0.0056                               Winner: java.util.Arrays::parallelSort1, faster by 10.25%
+Random Wide         100        0.0065                               0.0065                               Winner: java.util.Arrays::parallelSort1, faster by 0.00%
+Random Wide         1000       0.0203                               0.0281                               Winner: java.util.Arrays::parallelSort, faster by 27.76%
+Random Wide         10000      0.2941                               0.2958                               Winner: java.util.Arrays::parallelSort, faster by 0.57%
+Random Wide         100000     1.7665                               1.6874                               Winner: java.util.Arrays::parallelSort1, faster by 4.48%
+Random Wide         1000000    16.7607                              16.7932                              Winner: java.util.Arrays::parallelSort, faster by 0.19%
+Random Wide         10000000   179.3226                             182.3156                             Winner: java.util.Arrays::parallelSort, faster by 1.64%
+
+
+
+Displaying overall results...
+Sorting Algorithm                   Average % Improvement    Wins           
+----------------------------------------------------------------------------
+java.util.Arrays::parallelSort      4.97                     8/70 wins      
+java.util.Arrays::parallelSort1     9.55                     13/70 wins     
+
+Overall Winner: java.util.Arrays::parallelSort1      4.58% better than java.util.Arrays::parallelSort      
+
+
+
+iteration 4/10
+
+ArrayType           Length    java.util.Arrays::parallelSort      java.util.Arrays::parallelSort1     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         10         0.0047                               0.0030                               Winner: java.util.Arrays::parallelSort1, faster by 35.89%
+Random Wide         100        0.0044                               0.0042                               Winner: java.util.Arrays::parallelSort1, faster by 6.29%
+Random Wide         1000       0.0157                               0.0156                               Winner: java.util.Arrays::parallelSort1, faster by 1.09%
+Random Wide         10000      0.2581                               0.2375                               Winner: java.util.Arrays::parallelSort1, faster by 7.97%
+Random Wide         100000     1.8155                               1.8323                               Winner: java.util.Arrays::parallelSort, faster by 0.92%
+Random Wide         1000000    17.0303                              17.1662                              Winner: java.util.Arrays::parallelSort, faster by 0.79%
+Random Wide         10000000   196.2427                             193.7363                             Winner: java.util.Arrays::parallelSort1, faster by 1.28%
+
+
+
+Displaying overall results...
+Sorting Algorithm                   Average % Improvement    Wins           
+----------------------------------------------------------------------------
+java.util.Arrays::parallelSort      4.15                     10/70 wins     
+java.util.Arrays::parallelSort1     9.82                     18/70 wins     
+
+Overall Winner: java.util.Arrays::parallelSort1      5.67% better than java.util.Arrays::parallelSort      
+
+
+
+iteration 5/10
+
+ArrayType           Length    java.util.Arrays::parallelSort      java.util.Arrays::parallelSort1     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         10         0.0022                               0.0021                               Winner: java.util.Arrays::parallelSort1, faster by 3.96%
+Random Wide         100        0.0030                               0.0030                               Winner: java.util.Arrays::parallelSort1, faster by 0.95%
+Random Wide         1000       0.0187                               0.0170                               Winner: java.util.Arrays::parallelSort1, faster by 8.86%
+Random Wide         10000      0.3177                               0.2826                               Winner: java.util.Arrays::parallelSort1, faster by 11.03%
+Random Wide         100000     1.7475                               1.6650                               Winner: java.util.Arrays::parallelSort1, faster by 4.72%
+Random Wide         1000000    16.8839                              17.3027                              Winner: java.util.Arrays::parallelSort, faster by 2.42%
+Random Wide         10000000   193.6024                             193.5187                             Winner: java.util.Arrays::parallelSort1, faster by 0.04%
+
+
+
+Displaying overall results...
+Sorting Algorithm                   Average % Improvement    Wins           
+----------------------------------------------------------------------------
+java.util.Arrays::parallelSort      3.99                     11/70 wins     
+java.util.Arrays::parallelSort1     8.59                     24/70 wins     
+
+Overall Winner: java.util.Arrays::parallelSort1      4.61% better than java.util.Arrays::parallelSort      
+
+
+
+iteration 6/10
+
+ArrayType           Length    java.util.Arrays::parallelSort      java.util.Arrays::parallelSort1     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         10         0.0023                               0.0023                               Winner: java.util.Arrays::parallelSort, faster by 2.85%
+Random Wide         100        0.0031                               0.0030                               Winner: java.util.Arrays::parallelSort1, faster by 4.14%
+Random Wide         1000       0.0150                               0.0150                               Winner: java.util.Arrays::parallelSort, faster by 0.17%
+Random Wide         10000      0.2626                               0.2059                               Winner: java.util.Arrays::parallelSort1, faster by 21.59%
+Random Wide         100000     1.8522                               1.7680                               Winner: java.util.Arrays::parallelSort1, faster by 4.54%
+Random Wide         1000000    17.3389                              17.3408                              Winner: java.util.Arrays::parallelSort, faster by 0.01%
+Random Wide         10000000   208.2010                             209.1833                             Winner: java.util.Arrays::parallelSort, faster by 0.47%
+
+
+
+Displaying overall results...
+Sorting Algorithm                   Average % Improvement    Wins           
+----------------------------------------------------------------------------
+java.util.Arrays::parallelSort      3.16                     15/70 wins     
+java.util.Arrays::parallelSort1     8.76                     27/70 wins     
+
+Overall Winner: java.util.Arrays::parallelSort1      5.60% better than java.util.Arrays::parallelSort      
+
+
+
+iteration 7/10
+
+ArrayType           Length    java.util.Arrays::parallelSort      java.util.Arrays::parallelSort1     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         10         0.0023                               0.0023                               Winner: java.util.Arrays::parallelSort1, faster by 0.36%
+Random Wide         100        0.0034                               0.0033                               Winner: java.util.Arrays::parallelSort1, faster by 2.20%
+Random Wide         1000       0.0162                               0.0162                               Winner: java.util.Arrays::parallelSort1, faster by 0.46%
+Random Wide         10000      0.2450                               0.2270                               Winner: java.util.Arrays::parallelSort1, faster by 7.34%
+Random Wide         100000     1.9483                               1.9337                               Winner: java.util.Arrays::parallelSort1, faster by 0.75%
+Random Wide         1000000    17.5243                              17.2540                              Winner: java.util.Arrays::parallelSort1, faster by 1.54%
+Random Wide         10000000   212.6646                             213.0577                             Winner: java.util.Arrays::parallelSort, faster by 0.18%
+
+
+
+Displaying overall results...
+Sorting Algorithm                   Average % Improvement    Wins           
+----------------------------------------------------------------------------
+java.util.Arrays::parallelSort      2.97                     16/70 wins     
+java.util.Arrays::parallelSort1     7.55                     33/70 wins     
+
+Overall Winner: java.util.Arrays::parallelSort1      4.58% better than java.util.Arrays::parallelSort      
+
+
+
+iteration 8/10
+
+ArrayType           Length    java.util.Arrays::parallelSort      java.util.Arrays::parallelSort1     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         10         0.0023                               0.0023                               Winner: java.util.Arrays::parallelSort1, faster by 0.74%
+Random Wide         100        0.0033                               0.0032                               Winner: java.util.Arrays::parallelSort1, faster by 2.79%
+Random Wide         1000       0.0155                               0.0152                               Winner: java.util.Arrays::parallelSort1, faster by 1.86%
+Random Wide         10000      0.2408                               0.2242                               Winner: java.util.Arrays::parallelSort1, faster by 6.91%
+Random Wide         100000     1.8625                               1.8141                               Winner: java.util.Arrays::parallelSort1, faster by 2.60%
+Random Wide         1000000    17.9468                              17.8690                              Winner: java.util.Arrays::parallelSort1, faster by 0.43%
+Random Wide         10000000   196.3509                             196.8852                             Winner: java.util.Arrays::parallelSort, faster by 0.27%
+
+
+
+Displaying overall results...
+Sorting Algorithm                   Average % Improvement    Wins           
+----------------------------------------------------------------------------
+java.util.Arrays::parallelSort      2.81                     17/70 wins     
+java.util.Arrays::parallelSort1     6.78                     39/70 wins     
+
+Overall Winner: java.util.Arrays::parallelSort1      3.97% better than java.util.Arrays::parallelSort      
+
+
+
+iteration 9/10
+
+ArrayType           Length    java.util.Arrays::parallelSort      java.util.Arrays::parallelSort1     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         10         0.0023                               0.0023                               Winner: java.util.Arrays::parallelSort, faster by 0.55%
+Random Wide         100        0.0034                               0.0034                               Winner: java.util.Arrays::parallelSort1, faster by 0.86%
+Random Wide         1000       0.0193                               0.0164                               Winner: java.util.Arrays::parallelSort1, faster by 15.06%
+Random Wide         10000      0.3017                               0.2644                               Winner: java.util.Arrays::parallelSort1, faster by 12.36%
+Random Wide         100000     2.1383                               1.9580                               Winner: java.util.Arrays::parallelSort1, faster by 8.43%
+Random Wide         1000000    17.8401                              18.5722                              Winner: java.util.Arrays::parallelSort, faster by 3.94%
+Random Wide         10000000   195.8933                             204.3885                             Winner: java.util.Arrays::parallelSort, faster by 4.16%
+
+
+
+Displaying overall results...
+Sorting Algorithm                   Average % Improvement    Wins           
+----------------------------------------------------------------------------
+java.util.Arrays::parallelSort      2.82                     20/70 wins     
+java.util.Arrays::parallelSort1     7.00                     43/70 wins     
+
+Overall Winner: java.util.Arrays::parallelSort1      4.18% better than java.util.Arrays::parallelSort      
+
+
+
+iteration 10/10
+
+ArrayType           Length    java.util.Arrays::parallelSort      java.util.Arrays::parallelSort1     
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         10         0.0025                               0.0024                               Winner: java.util.Arrays::parallelSort1, faster by 4.04%
+Random Wide         100        0.0031                               0.0032                               Winner: java.util.Arrays::parallelSort, faster by 5.27%
+Random Wide         1000       0.0185                               0.0189                               Winner: java.util.Arrays::parallelSort, faster by 1.83%
+Random Wide         10000      0.2997                               0.2794                               Winner: java.util.Arrays::parallelSort1, faster by 6.78%
+Random Wide         100000     1.9711                               1.9817                               Winner: java.util.Arrays::parallelSort, faster by 0.53%
+Random Wide         1000000    19.9483                              18.8898                              Winner: java.util.Arrays::parallelSort1, faster by 5.31%
+Random Wide         10000000   223.7621                             223.2058                             Winner: java.util.Arrays::parallelSort1, faster by 0.25%
+
+
+
+Displaying overall results...
+Sorting Algorithm                   Average % Improvement    Wins           
+----------------------------------------------------------------------------
+java.util.Arrays::parallelSort      2.79                     23/70 wins     
+java.util.Arrays::parallelSort1     6.76                     47/70 wins     
+
+Overall Winner: java.util.Arrays::parallelSort1      3.97% better than java.util.Arrays::parallelSort      
+

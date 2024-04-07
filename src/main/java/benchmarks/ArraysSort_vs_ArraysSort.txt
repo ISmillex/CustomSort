@@ -1,0 +1,444 @@
+Starting ArraySorter Benchmark...
+
+Benchmark Parameters:
+java ArraySorterBenchmark -warmup 5 -timed 10 -iterations 10 -lengths 100000,1000000,10000000 -types Random Wide,Random Narrow,Nearly Sorted,Reverse Sorted,High Variance,Small Numbers,Large Numbers,Equal Distrib,Unequal Distrib -algorithms custom.sorts.CustomSort::sort,java.util.Arrays::sort
+
+
+iteration 1/10
+
+ArrayType           Length    custom.sorts.CustomSort::sort     java.util.Arrays::sort            
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     2.0962                             6.6821                             Winner: custom.sorts.CustomSort::sort, faster by 68.63%
+Random Narrow       100000     1.7663                             5.4892                             Winner: custom.sorts.CustomSort::sort, faster by 67.82%
+Nearly Sorted       100000     0.7791                             2.4609                             Winner: custom.sorts.CustomSort::sort, faster by 68.34%
+Reverse Sorted      100000     0.8387                             0.3905                             Winner: java.util.Arrays::sort, faster by 53.44%
+High Variance       100000     2.0692                             5.5696                             Winner: custom.sorts.CustomSort::sort, faster by 62.85%
+Small Numbers       100000     1.7857                             5.5402                             Winner: custom.sorts.CustomSort::sort, faster by 67.77%
+Large Numbers       100000     1.6997                             5.5375                             Winner: custom.sorts.CustomSort::sort, faster by 69.31%
+Equal Distrib       100000     1.6387                             5.5641                             Winner: custom.sorts.CustomSort::sort, faster by 70.55%
+Unequal Distrib     100000     1.7846                             5.5400                             Winner: custom.sorts.CustomSort::sort, faster by 67.79%
+Random Wide         1000000    17.4414                            69.3165                            Winner: custom.sorts.CustomSort::sort, faster by 74.84%
+Random Narrow       1000000    18.7734                            68.9265                            Winner: custom.sorts.CustomSort::sort, faster by 72.76%
+Nearly Sorted       1000000    6.0909                             28.9782                            Winner: custom.sorts.CustomSort::sort, faster by 78.98%
+Reverse Sorted      1000000    0.9953                             1.4496                             Winner: custom.sorts.CustomSort::sort, faster by 31.34%
+High Variance       1000000    17.1450                            67.5639                            Winner: custom.sorts.CustomSort::sort, faster by 74.62%
+Small Numbers       1000000    16.2583                            68.8984                            Winner: custom.sorts.CustomSort::sort, faster by 76.40%
+Large Numbers       1000000    17.0213                            68.1707                            Winner: custom.sorts.CustomSort::sort, faster by 75.03%
+Equal Distrib       1000000    15.9567                            70.9110                            Winner: custom.sorts.CustomSort::sort, faster by 77.50%
+Unequal Distrib     1000000    16.0260                            68.8798                            Winner: custom.sorts.CustomSort::sort, faster by 76.73%
+Random Wide         10000000   178.4064                           807.0151                           Winner: custom.sorts.CustomSort::sort, faster by 77.89%
+Random Narrow       10000000   185.5463                           812.3174                           Winner: custom.sorts.CustomSort::sort, faster by 77.16%
+Nearly Sorted       10000000   68.0777                            341.6548                           Winner: custom.sorts.CustomSort::sort, faster by 80.07%
+Reverse Sorted      10000000   6.1075                             14.0857                            Winner: custom.sorts.CustomSort::sort, faster by 56.64%
+High Variance       10000000   171.8461                           804.7165                           Winner: custom.sorts.CustomSort::sort, faster by 78.65%
+Small Numbers       10000000   186.7931                           813.0171                           Winner: custom.sorts.CustomSort::sort, faster by 77.02%
+Large Numbers       10000000   180.2679                           809.7826                           Winner: custom.sorts.CustomSort::sort, faster by 77.74%
+Equal Distrib       10000000   175.2465                           814.8155                           Winner: custom.sorts.CustomSort::sort, faster by 78.49%
+Unequal Distrib     10000000   182.4018                           816.8183                           Winner: custom.sorts.CustomSort::sort, faster by 77.67%
+
+
+
+Displaying overall results...
+Sorting Algorithm                 Average % Improvement    Wins           
+--------------------------------------------------------------------------
+custom.sorts.CustomSort::sort     71.64                    26/270 wins    
+java.util.Arrays::sort            53.44                    1/270 wins     
+
+Overall Winner: custom.sorts.CustomSort::sort      18.19% better than java.util.Arrays::sort            
+
+
+
+iteration 2/10
+
+ArrayType           Length    custom.sorts.CustomSort::sort     java.util.Arrays::sort            
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.6508                             5.5193                             Winner: custom.sorts.CustomSort::sort, faster by 70.09%
+Random Narrow       100000     1.5987                             5.6336                             Winner: custom.sorts.CustomSort::sort, faster by 71.62%
+Nearly Sorted       100000     0.6595                             2.3856                             Winner: custom.sorts.CustomSort::sort, faster by 72.36%
+Reverse Sorted      100000     0.1354                             0.1401                             Winner: custom.sorts.CustomSort::sort, faster by 3.33%
+High Variance       100000     1.7190                             5.6978                             Winner: custom.sorts.CustomSort::sort, faster by 69.83%
+Small Numbers       100000     1.6571                             5.7088                             Winner: custom.sorts.CustomSort::sort, faster by 70.97%
+Large Numbers       100000     1.6168                             5.6740                             Winner: custom.sorts.CustomSort::sort, faster by 71.51%
+Equal Distrib       100000     1.5922                             5.6699                             Winner: custom.sorts.CustomSort::sort, faster by 71.92%
+Unequal Distrib     100000     1.6663                             5.7160                             Winner: custom.sorts.CustomSort::sort, faster by 70.85%
+Random Wide         1000000    17.6826                            70.8052                            Winner: custom.sorts.CustomSort::sort, faster by 75.03%
+Random Narrow       1000000    18.0365                            69.3297                            Winner: custom.sorts.CustomSort::sort, faster by 73.98%
+Nearly Sorted       1000000    6.0756                             28.8274                            Winner: custom.sorts.CustomSort::sort, faster by 78.92%
+Reverse Sorted      1000000    0.8147                             1.4198                             Winner: custom.sorts.CustomSort::sort, faster by 42.62%
+High Variance       1000000    17.5013                            68.5577                            Winner: custom.sorts.CustomSort::sort, faster by 74.47%
+Small Numbers       1000000    15.7982                            69.5448                            Winner: custom.sorts.CustomSort::sort, faster by 77.28%
+Large Numbers       1000000    17.4713                            68.2181                            Winner: custom.sorts.CustomSort::sort, faster by 74.39%
+Equal Distrib       1000000    16.5797                            68.7610                            Winner: custom.sorts.CustomSort::sort, faster by 75.89%
+Unequal Distrib     1000000    16.5407                            67.9183                            Winner: custom.sorts.CustomSort::sort, faster by 75.65%
+Random Wide         10000000   183.6235                           804.6586                           Winner: custom.sorts.CustomSort::sort, faster by 77.18%
+Random Narrow       10000000   197.4172                           807.4415                           Winner: custom.sorts.CustomSort::sort, faster by 75.55%
+Nearly Sorted       10000000   69.4615                            338.3171                           Winner: custom.sorts.CustomSort::sort, faster by 79.47%
+Reverse Sorted      10000000   6.4041                             14.2718                            Winner: custom.sorts.CustomSort::sort, faster by 55.13%
+High Variance       10000000   182.6107                           801.0819                           Winner: custom.sorts.CustomSort::sort, faster by 77.20%
+Small Numbers       10000000   191.0591                           818.4380                           Winner: custom.sorts.CustomSort::sort, faster by 76.66%
+Large Numbers       10000000   199.1140                           819.5429                           Winner: custom.sorts.CustomSort::sort, faster by 75.70%
+Equal Distrib       10000000   187.4295                           818.1140                           Winner: custom.sorts.CustomSort::sort, faster by 77.09%
+Unequal Distrib     10000000   186.6196                           824.3918                           Winner: custom.sorts.CustomSort::sort, faster by 77.36%
+
+
+
+Displaying overall results...
+Sorting Algorithm                 Average % Improvement    Wins           
+--------------------------------------------------------------------------
+custom.sorts.CustomSort::sort     70.84                    53/270 wins    
+java.util.Arrays::sort            53.44                    1/270 wins     
+
+Overall Winner: custom.sorts.CustomSort::sort      17.40% better than java.util.Arrays::sort            
+
+
+
+iteration 3/10
+
+ArrayType           Length    custom.sorts.CustomSort::sort     java.util.Arrays::sort            
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.6538                             5.6730                             Winner: custom.sorts.CustomSort::sort, faster by 70.85%
+Random Narrow       100000     1.6972                             5.6486                             Winner: custom.sorts.CustomSort::sort, faster by 69.95%
+Nearly Sorted       100000     0.6454                             2.3642                             Winner: custom.sorts.CustomSort::sort, faster by 72.70%
+Reverse Sorted      100000     0.1398                             0.1433                             Winner: custom.sorts.CustomSort::sort, faster by 2.42%
+High Variance       100000     1.6609                             5.6862                             Winner: custom.sorts.CustomSort::sort, faster by 70.79%
+Small Numbers       100000     1.6765                             5.6339                             Winner: custom.sorts.CustomSort::sort, faster by 70.24%
+Large Numbers       100000     1.6657                             5.6205                             Winner: custom.sorts.CustomSort::sort, faster by 70.36%
+Equal Distrib       100000     1.6473                             5.7841                             Winner: custom.sorts.CustomSort::sort, faster by 71.52%
+Unequal Distrib     100000     1.6776                             5.5954                             Winner: custom.sorts.CustomSort::sort, faster by 70.02%
+Random Wide         1000000    17.3069                            70.0866                            Winner: custom.sorts.CustomSort::sort, faster by 75.31%
+Random Narrow       1000000    17.1248                            68.2228                            Winner: custom.sorts.CustomSort::sort, faster by 74.90%
+Nearly Sorted       1000000    6.0473                             29.2066                            Winner: custom.sorts.CustomSort::sort, faster by 79.29%
+Reverse Sorted      1000000    0.7792                             1.4227                             Winner: custom.sorts.CustomSort::sort, faster by 45.23%
+High Variance       1000000    15.7039                            70.5786                            Winner: custom.sorts.CustomSort::sort, faster by 77.75%
+Small Numbers       1000000    15.7328                            68.6114                            Winner: custom.sorts.CustomSort::sort, faster by 77.07%
+Large Numbers       1000000    17.5368                            69.0717                            Winner: custom.sorts.CustomSort::sort, faster by 74.61%
+Equal Distrib       1000000    17.5548                            67.6874                            Winner: custom.sorts.CustomSort::sort, faster by 74.06%
+Unequal Distrib     1000000    15.9679                            69.7841                            Winner: custom.sorts.CustomSort::sort, faster by 77.12%
+Random Wide         10000000   171.5767                           812.5789                           Winner: custom.sorts.CustomSort::sort, faster by 78.88%
+Random Narrow       10000000   187.3847                           811.3487                           Winner: custom.sorts.CustomSort::sort, faster by 76.90%
+Nearly Sorted       10000000   66.6170                            340.1026                           Winner: custom.sorts.CustomSort::sort, faster by 80.41%
+Reverse Sorted      10000000   6.0452                             14.1267                            Winner: custom.sorts.CustomSort::sort, faster by 57.21%
+High Variance       10000000   184.7121                           806.7212                           Winner: custom.sorts.CustomSort::sort, faster by 77.10%
+Small Numbers       10000000   186.8760                           826.4252                           Winner: custom.sorts.CustomSort::sort, faster by 77.39%
+Large Numbers       10000000   191.7105                           820.3386                           Winner: custom.sorts.CustomSort::sort, faster by 76.63%
+Equal Distrib       10000000   190.2216                           814.6470                           Winner: custom.sorts.CustomSort::sort, faster by 76.65%
+Unequal Distrib     10000000   185.4930                           810.7027                           Winner: custom.sorts.CustomSort::sort, faster by 77.12%
+
+
+
+Displaying overall results...
+Sorting Algorithm                 Average % Improvement    Wins           
+--------------------------------------------------------------------------
+custom.sorts.CustomSort::sort     70.71                    80/270 wins    
+java.util.Arrays::sort            53.44                    1/270 wins     
+
+Overall Winner: custom.sorts.CustomSort::sort      17.27% better than java.util.Arrays::sort            
+
+
+
+iteration 4/10
+
+ArrayType           Length    custom.sorts.CustomSort::sort     java.util.Arrays::sort            
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.7128                             5.8197                             Winner: custom.sorts.CustomSort::sort, faster by 70.57%
+Random Narrow       100000     1.6464                             5.5098                             Winner: custom.sorts.CustomSort::sort, faster by 70.12%
+Nearly Sorted       100000     0.6508                             2.3862                             Winner: custom.sorts.CustomSort::sort, faster by 72.73%
+Reverse Sorted      100000     0.1379                             0.1397                             Winner: custom.sorts.CustomSort::sort, faster by 1.24%
+High Variance       100000     1.6870                             5.6341                             Winner: custom.sorts.CustomSort::sort, faster by 70.06%
+Small Numbers       100000     1.5927                             5.7821                             Winner: custom.sorts.CustomSort::sort, faster by 72.46%
+Large Numbers       100000     1.7034                             5.6701                             Winner: custom.sorts.CustomSort::sort, faster by 69.96%
+Equal Distrib       100000     1.5983                             5.8085                             Winner: custom.sorts.CustomSort::sort, faster by 72.48%
+Unequal Distrib     100000     1.6057                             5.6538                             Winner: custom.sorts.CustomSort::sort, faster by 71.60%
+Random Wide         1000000    16.3008                            68.9242                            Winner: custom.sorts.CustomSort::sort, faster by 76.35%
+Random Narrow       1000000    18.1604                            69.2536                            Winner: custom.sorts.CustomSort::sort, faster by 73.78%
+Nearly Sorted       1000000    6.1458                             29.1141                            Winner: custom.sorts.CustomSort::sort, faster by 78.89%
+Reverse Sorted      1000000    0.8323                             1.4204                             Winner: custom.sorts.CustomSort::sort, faster by 41.41%
+High Variance       1000000    16.0517                            69.1559                            Winner: custom.sorts.CustomSort::sort, faster by 76.79%
+Small Numbers       1000000    17.9181                            68.4744                            Winner: custom.sorts.CustomSort::sort, faster by 73.83%
+Large Numbers       1000000    15.7081                            68.8272                            Winner: custom.sorts.CustomSort::sort, faster by 77.18%
+Equal Distrib       1000000    17.6559                            68.4255                            Winner: custom.sorts.CustomSort::sort, faster by 74.20%
+Unequal Distrib     1000000    16.1629                            68.8242                            Winner: custom.sorts.CustomSort::sort, faster by 76.52%
+Random Wide         10000000   186.5038                           827.4514                           Winner: custom.sorts.CustomSort::sort, faster by 77.46%
+Random Narrow       10000000   177.8375                           804.9735                           Winner: custom.sorts.CustomSort::sort, faster by 77.91%
+Nearly Sorted       10000000   68.9035                            343.9765                           Winner: custom.sorts.CustomSort::sort, faster by 79.97%
+Reverse Sorted      10000000   6.1203                             14.1080                            Winner: custom.sorts.CustomSort::sort, faster by 56.62%
+High Variance       10000000   188.9899                           817.8463                           Winner: custom.sorts.CustomSort::sort, faster by 76.89%
+Small Numbers       10000000   192.2194                           815.9339                           Winner: custom.sorts.CustomSort::sort, faster by 76.44%
+Large Numbers       10000000   186.3336                           800.7853                           Winner: custom.sorts.CustomSort::sort, faster by 76.73%
+Equal Distrib       10000000   173.6706                           820.8069                           Winner: custom.sorts.CustomSort::sort, faster by 78.84%
+Unequal Distrib     10000000   172.3887                           808.6012                           Winner: custom.sorts.CustomSort::sort, faster by 78.68%
+
+
+
+Displaying overall results...
+Sorting Algorithm                 Average % Improvement    Wins           
+--------------------------------------------------------------------------
+custom.sorts.CustomSort::sort     70.62                    107/270 wins   
+java.util.Arrays::sort            53.44                    1/270 wins     
+
+Overall Winner: custom.sorts.CustomSort::sort      17.18% better than java.util.Arrays::sort            
+
+
+
+iteration 5/10
+
+ArrayType           Length    custom.sorts.CustomSort::sort     java.util.Arrays::sort            
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.7843                             5.6805                             Winner: custom.sorts.CustomSort::sort, faster by 68.59%
+Random Narrow       100000     1.6861                             5.4765                             Winner: custom.sorts.CustomSort::sort, faster by 69.21%
+Nearly Sorted       100000     0.7143                             2.3587                             Winner: custom.sorts.CustomSort::sort, faster by 69.72%
+Reverse Sorted      100000     0.1391                             0.1407                             Winner: custom.sorts.CustomSort::sort, faster by 1.15%
+High Variance       100000     1.7013                             5.5682                             Winner: custom.sorts.CustomSort::sort, faster by 69.45%
+Small Numbers       100000     1.6488                             5.6771                             Winner: custom.sorts.CustomSort::sort, faster by 70.96%
+Large Numbers       100000     1.6171                             5.5201                             Winner: custom.sorts.CustomSort::sort, faster by 70.70%
+Equal Distrib       100000     1.6201                             5.4398                             Winner: custom.sorts.CustomSort::sort, faster by 70.22%
+Unequal Distrib     100000     1.6050                             5.6338                             Winner: custom.sorts.CustomSort::sort, faster by 71.51%
+Random Wide         1000000    17.9340                            69.1141                            Winner: custom.sorts.CustomSort::sort, faster by 74.05%
+Random Narrow       1000000    15.2745                            69.5417                            Winner: custom.sorts.CustomSort::sort, faster by 78.04%
+Nearly Sorted       1000000    6.0069                             29.6760                            Winner: custom.sorts.CustomSort::sort, faster by 79.76%
+Reverse Sorted      1000000    0.8509                             1.4211                             Winner: custom.sorts.CustomSort::sort, faster by 40.12%
+High Variance       1000000    16.9835                            70.0865                            Winner: custom.sorts.CustomSort::sort, faster by 75.77%
+Small Numbers       1000000    16.6611                            68.7813                            Winner: custom.sorts.CustomSort::sort, faster by 75.78%
+Large Numbers       1000000    16.1944                            67.8421                            Winner: custom.sorts.CustomSort::sort, faster by 76.13%
+Equal Distrib       1000000    17.8796                            69.6235                            Winner: custom.sorts.CustomSort::sort, faster by 74.32%
+Unequal Distrib     1000000    16.0692                            70.7476                            Winner: custom.sorts.CustomSort::sort, faster by 77.29%
+Random Wide         10000000   183.5255                           817.9508                           Winner: custom.sorts.CustomSort::sort, faster by 77.56%
+Random Narrow       10000000   183.4532                           805.4243                           Winner: custom.sorts.CustomSort::sort, faster by 77.22%
+Nearly Sorted       10000000   67.7247                            341.3298                           Winner: custom.sorts.CustomSort::sort, faster by 80.16%
+Reverse Sorted      10000000   6.1331                             14.2629                            Winner: custom.sorts.CustomSort::sort, faster by 57.00%
+High Variance       10000000   182.6004                           806.0989                           Winner: custom.sorts.CustomSort::sort, faster by 77.35%
+Small Numbers       10000000   176.1605                           807.7569                           Winner: custom.sorts.CustomSort::sort, faster by 78.19%
+Large Numbers       10000000   181.6064                           805.8542                           Winner: custom.sorts.CustomSort::sort, faster by 77.46%
+Equal Distrib       10000000   173.8218                           806.1481                           Winner: custom.sorts.CustomSort::sort, faster by 78.44%
+Unequal Distrib     10000000   177.8424                           793.4822                           Winner: custom.sorts.CustomSort::sort, faster by 77.59%
+
+
+
+Displaying overall results...
+Sorting Algorithm                 Average % Improvement    Wins           
+--------------------------------------------------------------------------
+custom.sorts.CustomSort::sort     70.53                    134/270 wins   
+java.util.Arrays::sort            53.44                    1/270 wins     
+
+Overall Winner: custom.sorts.CustomSort::sort      17.08% better than java.util.Arrays::sort            
+
+
+
+iteration 6/10
+
+ArrayType           Length    custom.sorts.CustomSort::sort     java.util.Arrays::sort            
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.7215                             5.4929                             Winner: custom.sorts.CustomSort::sort, faster by 68.66%
+Random Narrow       100000     1.7144                             5.5384                             Winner: custom.sorts.CustomSort::sort, faster by 69.04%
+Nearly Sorted       100000     0.6844                             2.3810                             Winner: custom.sorts.CustomSort::sort, faster by 71.26%
+Reverse Sorted      100000     0.1404                             0.1390                             Winner: java.util.Arrays::sort, faster by 1.02%
+High Variance       100000     1.6465                             5.6345                             Winner: custom.sorts.CustomSort::sort, faster by 70.78%
+Small Numbers       100000     1.6750                             5.7330                             Winner: custom.sorts.CustomSort::sort, faster by 70.78%
+Large Numbers       100000     1.7439                             5.7199                             Winner: custom.sorts.CustomSort::sort, faster by 69.51%
+Equal Distrib       100000     1.7561                             5.7155                             Winner: custom.sorts.CustomSort::sort, faster by 69.27%
+Unequal Distrib     100000     1.6415                             5.5564                             Winner: custom.sorts.CustomSort::sort, faster by 70.46%
+Random Wide         1000000    16.0294                            70.3829                            Winner: custom.sorts.CustomSort::sort, faster by 77.23%
+Random Narrow       1000000    17.7849                            67.5736                            Winner: custom.sorts.CustomSort::sort, faster by 73.68%
+Nearly Sorted       1000000    6.0568                             28.8191                            Winner: custom.sorts.CustomSort::sort, faster by 78.98%
+Reverse Sorted      1000000    0.7889                             1.4211                             Winner: custom.sorts.CustomSort::sort, faster by 44.48%
+High Variance       1000000    18.1992                            68.4480                            Winner: custom.sorts.CustomSort::sort, faster by 73.41%
+Small Numbers       1000000    17.2986                            69.0463                            Winner: custom.sorts.CustomSort::sort, faster by 74.95%
+Large Numbers       1000000    17.8627                            68.5794                            Winner: custom.sorts.CustomSort::sort, faster by 73.95%
+Equal Distrib       1000000    17.9821                            69.2362                            Winner: custom.sorts.CustomSort::sort, faster by 74.03%
+Unequal Distrib     1000000    16.5364                            67.2242                            Winner: custom.sorts.CustomSort::sort, faster by 75.40%
+Random Wide         10000000   187.6194                           829.7485                           Winner: custom.sorts.CustomSort::sort, faster by 77.39%
+Random Narrow       10000000   184.1274                           804.0904                           Winner: custom.sorts.CustomSort::sort, faster by 77.10%
+Nearly Sorted       10000000   66.5011                            341.0744                           Winner: custom.sorts.CustomSort::sort, faster by 80.50%
+Reverse Sorted      10000000   6.1445                             14.0946                            Winner: custom.sorts.CustomSort::sort, faster by 56.41%
+High Variance       10000000   187.5225                           818.1507                           Winner: custom.sorts.CustomSort::sort, faster by 77.08%
+Small Numbers       10000000   187.4033                           809.4835                           Winner: custom.sorts.CustomSort::sort, faster by 76.85%
+Large Numbers       10000000   181.9257                           814.8919                           Winner: custom.sorts.CustomSort::sort, faster by 77.67%
+Equal Distrib       10000000   190.7394                           796.6448                           Winner: custom.sorts.CustomSort::sort, faster by 76.06%
+Unequal Distrib     10000000   187.8228                           816.5029                           Winner: custom.sorts.CustomSort::sort, faster by 77.00%
+
+
+
+Displaying overall results...
+Sorting Algorithm                 Average % Improvement    Wins           
+--------------------------------------------------------------------------
+custom.sorts.CustomSort::sort     70.83                    160/270 wins   
+java.util.Arrays::sort            27.23                    2/270 wins     
+
+Overall Winner: custom.sorts.CustomSort::sort      43.60% better than java.util.Arrays::sort            
+
+
+
+iteration 7/10
+
+ArrayType           Length    custom.sorts.CustomSort::sort     java.util.Arrays::sort            
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.7219                             5.6555                             Winner: custom.sorts.CustomSort::sort, faster by 69.55%
+Random Narrow       100000     1.6863                             5.5699                             Winner: custom.sorts.CustomSort::sort, faster by 69.73%
+Nearly Sorted       100000     0.6524                             2.3819                             Winner: custom.sorts.CustomSort::sort, faster by 72.61%
+Reverse Sorted      100000     0.1372                             0.1412                             Winner: custom.sorts.CustomSort::sort, faster by 2.84%
+High Variance       100000     1.5936                             5.6825                             Winner: custom.sorts.CustomSort::sort, faster by 71.96%
+Small Numbers       100000     1.6814                             5.7752                             Winner: custom.sorts.CustomSort::sort, faster by 70.89%
+Large Numbers       100000     1.5934                             5.8740                             Winner: custom.sorts.CustomSort::sort, faster by 72.87%
+Equal Distrib       100000     1.6158                             5.5265                             Winner: custom.sorts.CustomSort::sort, faster by 70.76%
+Unequal Distrib     100000     1.6434                             5.5734                             Winner: custom.sorts.CustomSort::sort, faster by 70.51%
+Random Wide         1000000    16.0090                            70.0634                            Winner: custom.sorts.CustomSort::sort, faster by 77.15%
+Random Narrow       1000000    18.7181                            68.5113                            Winner: custom.sorts.CustomSort::sort, faster by 72.68%
+Nearly Sorted       1000000    6.2304                             29.0004                            Winner: custom.sorts.CustomSort::sort, faster by 78.52%
+Reverse Sorted      1000000    0.7825                             1.4328                             Winner: custom.sorts.CustomSort::sort, faster by 45.38%
+High Variance       1000000    16.2723                            69.0175                            Winner: custom.sorts.CustomSort::sort, faster by 76.42%
+Small Numbers       1000000    16.8509                            69.0755                            Winner: custom.sorts.CustomSort::sort, faster by 75.61%
+Large Numbers       1000000    17.7252                            69.8704                            Winner: custom.sorts.CustomSort::sort, faster by 74.63%
+Equal Distrib       1000000    17.9317                            69.2066                            Winner: custom.sorts.CustomSort::sort, faster by 74.09%
+Unequal Distrib     1000000    16.9654                            70.8324                            Winner: custom.sorts.CustomSort::sort, faster by 76.05%
+Random Wide         10000000   180.1109                           819.3831                           Winner: custom.sorts.CustomSort::sort, faster by 78.02%
+Random Narrow       10000000   194.4951                           797.1702                           Winner: custom.sorts.CustomSort::sort, faster by 75.60%
+Nearly Sorted       10000000   66.6065                            344.4515                           Winner: custom.sorts.CustomSort::sort, faster by 80.66%
+Reverse Sorted      10000000   6.1898                             14.0815                            Winner: custom.sorts.CustomSort::sort, faster by 56.04%
+High Variance       10000000   181.1755                           808.9534                           Winner: custom.sorts.CustomSort::sort, faster by 77.60%
+Small Numbers       10000000   194.9203                           808.4983                           Winner: custom.sorts.CustomSort::sort, faster by 75.89%
+Large Numbers       10000000   186.8114                           794.3643                           Winner: custom.sorts.CustomSort::sort, faster by 76.48%
+Equal Distrib       10000000   177.7581                           807.8583                           Winner: custom.sorts.CustomSort::sort, faster by 78.00%
+Unequal Distrib     10000000   190.2764                           819.6113                           Winner: custom.sorts.CustomSort::sort, faster by 76.78%
+
+
+
+Displaying overall results...
+Sorting Algorithm                 Average % Improvement    Wins           
+--------------------------------------------------------------------------
+custom.sorts.CustomSort::sort     70.75                    187/270 wins   
+java.util.Arrays::sort            27.23                    2/270 wins     
+
+Overall Winner: custom.sorts.CustomSort::sort      43.52% better than java.util.Arrays::sort            
+
+
+
+iteration 8/10
+
+ArrayType           Length    custom.sorts.CustomSort::sort     java.util.Arrays::sort            
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.7306                             5.6782                             Winner: custom.sorts.CustomSort::sort, faster by 69.52%
+Random Narrow       100000     1.6212                             5.5628                             Winner: custom.sorts.CustomSort::sort, faster by 70.86%
+Nearly Sorted       100000     0.6677                             2.3970                             Winner: custom.sorts.CustomSort::sort, faster by 72.14%
+Reverse Sorted      100000     0.1451                             0.1390                             Winner: java.util.Arrays::sort, faster by 4.21%
+High Variance       100000     1.6311                             5.6894                             Winner: custom.sorts.CustomSort::sort, faster by 71.33%
+Small Numbers       100000     1.6111                             5.7106                             Winner: custom.sorts.CustomSort::sort, faster by 71.79%
+Large Numbers       100000     1.6380                             5.7682                             Winner: custom.sorts.CustomSort::sort, faster by 71.60%
+Equal Distrib       100000     1.6293                             5.5577                             Winner: custom.sorts.CustomSort::sort, faster by 70.68%
+Unequal Distrib     100000     1.6494                             5.5384                             Winner: custom.sorts.CustomSort::sort, faster by 70.22%
+Random Wide         1000000    18.1754                            69.0653                            Winner: custom.sorts.CustomSort::sort, faster by 73.68%
+Random Narrow       1000000    16.4735                            69.7591                            Winner: custom.sorts.CustomSort::sort, faster by 76.39%
+Nearly Sorted       1000000    6.0464                             28.9896                            Winner: custom.sorts.CustomSort::sort, faster by 79.14%
+Reverse Sorted      1000000    0.7655                             1.4174                             Winner: custom.sorts.CustomSort::sort, faster by 46.00%
+High Variance       1000000    17.7215                            68.5819                            Winner: custom.sorts.CustomSort::sort, faster by 74.16%
+Small Numbers       1000000    17.3206                            69.9942                            Winner: custom.sorts.CustomSort::sort, faster by 75.25%
+Large Numbers       1000000    16.3407                            69.0463                            Winner: custom.sorts.CustomSort::sort, faster by 76.33%
+Equal Distrib       1000000    17.3955                            68.0822                            Winner: custom.sorts.CustomSort::sort, faster by 74.45%
+Unequal Distrib     1000000    16.2567                            68.8829                            Winner: custom.sorts.CustomSort::sort, faster by 76.40%
+Random Wide         10000000   175.5989                           800.8022                           Winner: custom.sorts.CustomSort::sort, faster by 78.07%
+Random Narrow       10000000   176.4510                           807.5390                           Winner: custom.sorts.CustomSort::sort, faster by 78.15%
+Nearly Sorted       10000000   69.0229                            341.3087                           Winner: custom.sorts.CustomSort::sort, faster by 79.78%
+Reverse Sorted      10000000   6.0764                             14.0876                            Winner: custom.sorts.CustomSort::sort, faster by 56.87%
+High Variance       10000000   186.9334                           810.3631                           Winner: custom.sorts.CustomSort::sort, faster by 76.93%
+Small Numbers       10000000   182.2947                           812.2540                           Winner: custom.sorts.CustomSort::sort, faster by 77.56%
+Large Numbers       10000000   199.0475                           808.9856                           Winner: custom.sorts.CustomSort::sort, faster by 75.40%
+Equal Distrib       10000000   178.1770                           804.6860                           Winner: custom.sorts.CustomSort::sort, faster by 77.86%
+Unequal Distrib     10000000   191.5570                           805.6722                           Winner: custom.sorts.CustomSort::sort, faster by 76.22%
+
+
+
+Displaying overall results...
+Sorting Algorithm                 Average % Improvement    Wins           
+--------------------------------------------------------------------------
+custom.sorts.CustomSort::sort     71.02                    213/270 wins   
+java.util.Arrays::sort            19.56                    3/270 wins     
+
+Overall Winner: custom.sorts.CustomSort::sort      51.46% better than java.util.Arrays::sort            
+
+
+
+iteration 9/10
+
+ArrayType           Length    custom.sorts.CustomSort::sort     java.util.Arrays::sort            
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.7585                             5.8506                             Winner: custom.sorts.CustomSort::sort, faster by 69.94%
+Random Narrow       100000     1.7809                             5.7035                             Winner: custom.sorts.CustomSort::sort, faster by 68.77%
+Nearly Sorted       100000     0.6843                             2.3909                             Winner: custom.sorts.CustomSort::sort, faster by 71.38%
+Reverse Sorted      100000     0.1521                             0.1377                             Winner: java.util.Arrays::sort, faster by 9.49%
+High Variance       100000     1.6658                             5.5895                             Winner: custom.sorts.CustomSort::sort, faster by 70.20%
+Small Numbers       100000     1.6775                             5.6911                             Winner: custom.sorts.CustomSort::sort, faster by 70.52%
+Large Numbers       100000     1.6382                             5.5360                             Winner: custom.sorts.CustomSort::sort, faster by 70.41%
+Equal Distrib       100000     1.6288                             5.8036                             Winner: custom.sorts.CustomSort::sort, faster by 71.94%
+Unequal Distrib     100000     1.6382                             5.5214                             Winner: custom.sorts.CustomSort::sort, faster by 70.33%
+Random Wide         1000000    17.7879                            69.8195                            Winner: custom.sorts.CustomSort::sort, faster by 74.52%
+Random Narrow       1000000    16.6147                            68.2966                            Winner: custom.sorts.CustomSort::sort, faster by 75.67%
+Nearly Sorted       1000000    6.0286                             29.0102                            Winner: custom.sorts.CustomSort::sort, faster by 79.22%
+Reverse Sorted      1000000    0.7884                             1.4138                             Winner: custom.sorts.CustomSort::sort, faster by 44.23%
+High Variance       1000000    15.8003                            68.4242                            Winner: custom.sorts.CustomSort::sort, faster by 76.91%
+Small Numbers       1000000    18.2640                            69.3477                            Winner: custom.sorts.CustomSort::sort, faster by 73.66%
+Large Numbers       1000000    16.3284                            67.9756                            Winner: custom.sorts.CustomSort::sort, faster by 75.98%
+Equal Distrib       1000000    16.0251                            69.0652                            Winner: custom.sorts.CustomSort::sort, faster by 76.80%
+Unequal Distrib     1000000    16.5921                            68.0658                            Winner: custom.sorts.CustomSort::sort, faster by 75.62%
+Random Wide         10000000   177.8453                           812.9008                           Winner: custom.sorts.CustomSort::sort, faster by 78.12%
+Random Narrow       10000000   180.6993                           820.1560                           Winner: custom.sorts.CustomSort::sort, faster by 77.97%
+Nearly Sorted       10000000   66.1687                            339.1059                           Winner: custom.sorts.CustomSort::sort, faster by 80.49%
+Reverse Sorted      10000000   6.1226                             14.0686                            Winner: custom.sorts.CustomSort::sort, faster by 56.48%
+High Variance       10000000   183.4188                           807.1995                           Winner: custom.sorts.CustomSort::sort, faster by 77.28%
+Small Numbers       10000000   200.4496                           816.5741                           Winner: custom.sorts.CustomSort::sort, faster by 75.45%
+Large Numbers       10000000   187.4054                           804.6071                           Winner: custom.sorts.CustomSort::sort, faster by 76.71%
+Equal Distrib       10000000   186.7690                           812.7182                           Winner: custom.sorts.CustomSort::sort, faster by 77.02%
+Unequal Distrib     10000000   176.6687                           805.3266                           Winner: custom.sorts.CustomSort::sort, faster by 78.06%
+
+
+
+Displaying overall results...
+Sorting Algorithm                 Average % Improvement    Wins           
+--------------------------------------------------------------------------
+custom.sorts.CustomSort::sort     71.21                    239/270 wins   
+java.util.Arrays::sort            17.04                    4/270 wins     
+
+Overall Winner: custom.sorts.CustomSort::sort      54.17% better than java.util.Arrays::sort            
+
+
+
+iteration 10/10
+
+ArrayType           Length    custom.sorts.CustomSort::sort     java.util.Arrays::sort            
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Random Wide         100000     1.6315                             5.6743                             Winner: custom.sorts.CustomSort::sort, faster by 71.25%
+Random Narrow       100000     1.5300                             5.8570                             Winner: custom.sorts.CustomSort::sort, faster by 73.88%
+Nearly Sorted       100000     0.6712                             2.3677                             Winner: custom.sorts.CustomSort::sort, faster by 71.65%
+Reverse Sorted      100000     0.1310                             0.1378                             Winner: custom.sorts.CustomSort::sort, faster by 4.88%
+High Variance       100000     1.5819                             5.6674                             Winner: custom.sorts.CustomSort::sort, faster by 72.09%
+Small Numbers       100000     1.6879                             5.5066                             Winner: custom.sorts.CustomSort::sort, faster by 69.35%
+Large Numbers       100000     1.5373                             5.5728                             Winner: custom.sorts.CustomSort::sort, faster by 72.41%
+Equal Distrib       100000     1.5814                             5.4860                             Winner: custom.sorts.CustomSort::sort, faster by 71.17%
+Unequal Distrib     100000     1.6580                             5.7875                             Winner: custom.sorts.CustomSort::sort, faster by 71.35%
+Random Wide         1000000    17.5871                            68.1937                            Winner: custom.sorts.CustomSort::sort, faster by 74.21%
+Random Narrow       1000000    17.5810                            69.3295                            Winner: custom.sorts.CustomSort::sort, faster by 74.64%
+Nearly Sorted       1000000    6.0970                             29.9404                            Winner: custom.sorts.CustomSort::sort, faster by 79.64%
+Reverse Sorted      1000000    0.8103                             1.4090                             Winner: custom.sorts.CustomSort::sort, faster by 42.49%
+High Variance       1000000    14.9233                            68.4998                            Winner: custom.sorts.CustomSort::sort, faster by 78.21%
+Small Numbers       1000000    16.3209                            68.4326                            Winner: custom.sorts.CustomSort::sort, faster by 76.15%
+Large Numbers       1000000    16.4778                            68.9415                            Winner: custom.sorts.CustomSort::sort, faster by 76.10%
+Equal Distrib       1000000    17.5529                            69.3142                            Winner: custom.sorts.CustomSort::sort, faster by 74.68%
+Unequal Distrib     1000000    15.3183                            69.2279                            Winner: custom.sorts.CustomSort::sort, faster by 77.87%
+Random Wide         10000000   178.9448                           836.6393                           Winner: custom.sorts.CustomSort::sort, faster by 78.61%
+Random Narrow       10000000   173.3238                           815.2551                           Winner: custom.sorts.CustomSort::sort, faster by 78.74%
+Nearly Sorted       10000000   67.2742                            340.6503                           Winner: custom.sorts.CustomSort::sort, faster by 80.25%
+Reverse Sorted      10000000   6.1788                             14.0735                            Winner: custom.sorts.CustomSort::sort, faster by 56.10%
+High Variance       10000000   195.1164                           819.1687                           Winner: custom.sorts.CustomSort::sort, faster by 76.18%
+Small Numbers       10000000   169.6406                           812.2494                           Winner: custom.sorts.CustomSort::sort, faster by 79.11%
+Large Numbers       10000000   199.3388                           816.8313                           Winner: custom.sorts.CustomSort::sort, faster by 75.60%
+Equal Distrib       10000000   186.7783                           809.0825                           Winner: custom.sorts.CustomSort::sort, faster by 76.91%
+Unequal Distrib     10000000   189.7057                           789.9318                           Winner: custom.sorts.CustomSort::sort, faster by 75.98%
+
+
+
+Displaying overall results...
+Sorting Algorithm                 Average % Improvement    Wins           
+--------------------------------------------------------------------------
+custom.sorts.CustomSort::sort     71.16                    266/270 wins   
+java.util.Arrays::sort            17.04                    4/270 wins     
+
+Overall Winner: custom.sorts.CustomSort::sort      54.12% better than java.util.Arrays::sort            
+
