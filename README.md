@@ -321,13 +321,13 @@ To run the sorting algorithm benchmarks on your local machine, follow these step
    cd CustomSort
    ```
 
-3. Place your custom sorting algorithm in the `customs/sorts` folder. Ensure that your class has a `public void sort()` method. Alternatively, you can use the provided `CustomSort.java`.
+3. Place your custom sorting algorithm in the `custom/sorts` folder. Ensure that your class has a `public void sort()` method. Alternatively, you can use the provided `CustomSort.java`.
 
 4. Compile your sorting algorithm:
    ```
-   javac customs/sorts/YOUR_SORTING_ALGORITHM.java
+   javac custom/sorts/YOUR_SORTING_ALGORITHM.java
    ```
-   (or `javac customs/sorts/CustomSort.java` for the provided `CustomSort` class)
+   (or `javac custom/sorts/CustomSort.java` for the provided `CustomSort` class)
 
 5. Compile the `ArraySorterBenchmark` class:
    ```
